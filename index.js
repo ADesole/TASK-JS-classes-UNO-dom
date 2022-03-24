@@ -28,7 +28,54 @@
  *      you need to use loops and fill the cards deck in a loop (Hint: You should use `for` loops, )
  *
  */
+
+class Card {
+  constructor(number, color) {
+    this.number = number;
+    this.color = color;
+  }
+  image = () => {
+    return `./images/${this.color}_${this.number}.png`;
+  };
+}
+// let card1 = new Card(1, "green");
+// let card2 = new Card(1, "blue");
+// let card3 = new Card(1, "red");
+// let card4 = new Card(1, "yellow");
+// console.log(card1);
+// console.log(card2);
+// console.log(card3);
+// console.log(card4);
+
 let cards = []; // You will use this array in step 6
+// cards.push(card1);
+// cards.push(card2);
+// cards.push(card3);
+// cards.push(card4);
+let colors = ["yellow", "blue", "red", "green"];
+for (let index = 0; index < 10; index++) {
+  cards.push(new Card(index, colors[0]));
+  cards.push(new Card(index, colors[0]));
+  cards.push(new Card(index, colors[1]));
+  cards.push(new Card(index, colors[1]));
+  cards.push(new Card(index, colors[2]));
+  cards.push(new Card(index, colors[2]));
+  cards.push(new Card(index, colors[3]));
+  cards.push(new Card(index, colors[3]));
+}
+
+// for (let index = 0; index < 10; index++) {
+//   cards.push(new Card(index, colors[1]));
+//   cards.push(new Card(index, colors[1]));
+// }
+// for (let index = 0; index < 10; index++) {
+//   cards.push(new Card(index, colors[2]));
+//   cards.push(new Card(index, colors[2]));
+// }
+// for (let index = 0; index < 10; index++) {
+//   cards.push(new Card(index, colors[3]));
+//   cards.push(new Card(index, colors[3]));
+// }
 
 // Continue the code here 👇🏻
 
